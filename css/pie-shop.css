@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(/images/pattern.png);
+  font-family: sans-serif;
+  margin: 0; /* Restablece el margen predeterminado del cuerpo */
+}
+
+header {
+  background-color: #d0c0e0;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; /* Ancho completo */
+  height: 300px;
+  margin: 0; /* Margen superior e inferior a 0 */
+  position: fixed; /* Fija el encabezado */
+  top: 0;
+  left: 0;
+  z-index: 1000px; /* Asegura que el encabezado esté encima del contenido */
+}
+
+.logo {
+  width: 250px;
+  height: 250px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 2em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#titulo {
+  position: absolute;
+  top: 350px; /* Posiciona el título debajo del encabezado */
+  left: 50%;
+
+  transform: translateX(-50%);
+  font-size: 70px; /* Tamaño de la letra del título */
+  color: #a593c2;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 750px; /* Espacio entre el encabezado y la imagen */
+}
+.hero-content {
+  text-align: center;
+}
+.hero-image {
+  width: 90%;
+
+  margin-top: 30px;
+}
+.hero-image img {
+  width: 100%;
+  height: 1000px;
+}
+p {
+  line-height: 1;
+  text-align: left; /* Alinea el texto al centro */
+  color: #28302f; /* Agrega color azul oscuro a las letras */
+}
+.greetings {
+  font-size: 95px;
+  font-weight: 1500;
+}
+
+.greetings {
+  letter-spacing: -2px;
+  white-space: nowrap;
+}
+.greetings > span {
+  animation: glow 1s ease-in-out infinite;
+}
+.greetings {
+  text-align: center;
+  vertical-align: middle;
+}
+@keyframes glow {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 12px #cc8b41, 0 0 50px #b5b821, 0 0 100px #e1b23c;
+  }
+  10%,
+  90% {
+    color: #a593c2;
+    text-shadow: none;
+  }
+}
+.greetings > span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.greetings > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.greetings > span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.greetings > span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.contenedor {
+  text-align: center;
+}
+
+button {
+  width: 900px; /* Establece el ancho del botón */
+  height: 300px; /* Establece el alto del botón */
+  padding: 20px 0; /* Reduce el relleno del botón */
+  margin: 3px 5px; /* Ajusta el margen para que los botones no estén tan juntos */
+  background-color: #e04c11;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 90px; /* Aumenta el tamaño de las letras */
+  font-weight: bold; /* Añade negrita a las letras */
+}
+
+button:hover {
+  background-color: #7d1967;
+}
+
+aside {
+  display: flex;
+  justify-content: center; /* Centra el contenido del aside */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Ajusta la dirección del contenedor para que los botones estén en columna */
+  align-items: center; /* Centra los botones en el contenedor */
+}
+footer {
+  clear: both;
+  text-align: left;
+}
+#mainfooter {
+  background-color: #a593c2;
+}
+.logo {
+  cursor: pointer;
+}
+#audio {
+  display: none; /* Ocultar el elemento audio */
+}
+footer {
+  background-color: #a67cb5;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+.pie-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  margin-bottom: 70px;
+}
+.pie-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.pie-item img {
+  width: 100px;
+  border-radius: 16px;
+}
+.pie-details {
+  flex-grow: 3;
+  margin-left: 80px;
+  text-align: left;
+}
+.pie-details h3 {
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+.pie-details p {
+  font-size: 42px;
+  color: #555;
+}
+.pie-price {
+  font-size: 50px;
+  font-weight: bold;
+  color: #6a47a4;
+}
+.responsive-iframe {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 (altura/anchura * 100%) */
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

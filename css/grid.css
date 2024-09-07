@@ -1,0 +1,49 @@
+@media (min-width: 768px) {
+  body {
+    background-image: url(/images/pattern.png);
+    font-family: sans-serif;
+    margin: 0; /* Restablece el margen predeterminado del cuerpo */
+  }
+}
+#mainfooter {
+  background-color: #a593c2;
+}
+p {
+  line-height: 1;
+  text-align: left; /* Alinea el texto al centro */
+  color: #28302f; /* Agrega color azul oscuro a las letras */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 2em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 430px) {
+  .pieRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pieRow img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .pieRow div,
+  .pieRow small {
+    text-align: center;
+    padding-left: 0;
+  }
+}

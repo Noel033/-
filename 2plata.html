@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to Bethany' Pie Shop 2!</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.25" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/pie-shop.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/cake.svg" alt="Pie Logo" class="logo" id="logo" />
+      <audio id="audio" loop>
+        <source src="audio/terreineitor.mp3" type="audio/mp3" />
+        <span style="display: none"
+          >Tu navegador no soporta el elemento audio.</span
+        >
+      </audio>
+
+      <script>
+        const logo = document.getElementById("logo");
+        const audio = document.getElementById("audio");
+
+        logo.addEventListener("click", () => {
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        });
+      </script>
+      <nav>
+        <ul>
+          <li style="margin-right: 200px">
+            <a href="index.html" style="font-size: 70px">Home</a>
+          </li>
+          <li style="margin-right: 200px">
+            <a href="2plata.html" style="font-size: 70px">All Pies</a>
+          </li>
+          <li>
+            <a href="3plata.html" style="font-size: 70px">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <div class="pie-item">
+          <img src="images/products/applepie.jpg" alt="Pie Image" />
+          <div class="pie-details">
+            <h3>Apple Pie</h3>
+            <p>
+              Classic apple pie made with fresh, locally sourced ingredients.
+            </p>
+          </div>
+          <div class="pie-price">$18.55</div>
+        </div>
+        <br /><br />
+
+        <div class="pie-item">
+          <img src="images/products/applepie.jpg" alt="Pie Image" />
+          <div class="pie-details">
+            <h3>Apple Pie</h3>
+            <p>
+              Classic apple pie made with fresh, locally sourced ingredients.
+            </p>
+          </div>
+          <div class="pie-price">$18.55</div>
+        </div>
+        <br /><br />
+        <div class="pie-item">
+          <img src="images/products/applepie.jpg" alt="Pie Image" />
+          <div class="pie-details">
+            <h3>Apple Pie</h3>
+            <p>
+              Classic apple pie made with fresh, locally sourced ingredients.
+            </p>
+          </div>
+          <div class="pie-price">$18.55</div>
+        </div>
+        <br /><br />
+        <div class="pie-item">
+          <img src="images/products/applepie.jpg" alt="Pie Image" />
+          <div class="pie-details">
+            <h3>Apple Pie</h3>
+            <p>
+              Classic apple pie made with fresh, locally sourced ingredients.
+            </p>
+          </div>
+          <div class="pie-price">$18.55</div>
+        </div>
+        <br /><br />
+        <div class="pie-item">
+          <img src="images/products/applepie.jpg" alt="Pie Image" />
+          <div class="pie-details">
+            <h3>Apple Pie</h3>
+            <p>
+              Classic apple pie made with fresh, locally sourced ingredients.
+            </p>
+          </div>
+          <div class="pie-price">$18.55</div>
+        </div>
+        <br /><br />
+        <div class="pie-item">
+          <img src="images/products/applepie.jpg" alt="Pie Image" />
+          <div class="pie-details">
+            <h3>Apple Pie</h3>
+            <p>
+              Classic apple pie made with fresh, locally sourced ingredients.
+            </p>
+          </div>
+          <div class="pie-price">$18.55</div>
+        </div>
+      </section>
+    </main>
+    <aside>
+      <div class="container">
+        <div>
+          <img src="images/bethanylogo.png" width="850" height="849" />
+        </div>
+        <br />
+        <div class="greetings">
+          <span>B</span>
+          <span>r</span>
+          <span>o</span>
+          <span>w</span>
+          <span>s</span>
+          <span>e</span>&nbsp;&nbsp;
+          <span>o</span>
+          <span>u</span>
+          <span>r</span>&nbsp;&nbsp;
+          <span>P</span>
+          <span>i</span>
+          <span>e</span>
+          <span>s</span>
+        </div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <a href="2plata.html"><button>All Pies</button></a>
+        <a href="3plata.html"><button>Cheese Pies</button></a>
+        <a href="index.html"><button>Fruit Pies</button></a>
+        <a href="2plata.html"><button>Promotions</button></a>
+      </div>
+    </aside>
+    <div><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+
+    <footer id="mainfooter">
+      <br />
+      <h4>Nuestra dirección</h4>
+      <address>Av La Fontana S/N- La Molina</address>
+      <small
+        >Contact is via
+        <a href="p-g-contacto-main/fulanito.html" target="_blank"
+          >email</a
+        ></small
+      >
+      <small>@2024 FIA-All rights reserved</small>
+      <div><br /></div>
+    </footer>
+  </body>
+</html>

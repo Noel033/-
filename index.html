@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to Bethany' Pie Shop 2!</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.25" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/pie-shop.css" />
+  </head>
+  <style></style>
+
+  <body>
+    <header>
+      <img src="images/cake.svg" alt="Pie Logo" class="logo" id="logo" />
+      <audio id="audio" loop>
+        <source src="audio/terreineitor.mp3" type="audio/mp3" />
+        <span style="display: none"
+          >Tu navegador no soporta el elemento audio.</span
+        >
+      </audio>
+
+      <script>
+        const logo = document.getElementById("logo");
+        const audio = document.getElementById("audio");
+
+        logo.addEventListener("click", () => {
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        });
+      </script>
+      <nav>
+        <ul>
+          <li style="margin-right: 200px">
+            <a href="index.html" style="font-size: 70px">Home</a>
+          </li>
+          <li style="margin-right: 200px">
+            <a href="2plata.html" style="font-size: 70px">All Pies</a>
+          </li>
+          <li>
+            <a href="3plata.html" style="font-size: 70px">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h2 id="titulo">
+      <div class="greetings">
+        <span>W</span>
+        <span>e</span>
+        <span>l</span>
+        <span>c</span>
+        <span>o</span>
+        <span>m</span>
+        <span>e</span>&nbsp;&nbsp;
+        <span>t</span>
+        <span>o</span>&nbsp;&nbsp;
+        <span>B</span>
+        <span>e</span>
+        <span>t</span>
+        <span>h</span>
+        <span>a</span>
+        <span>n</span>
+        <span>y'</span>
+        <span>s</span>
+      </div>
+      <div class="greetings">
+        <span>p</span>
+        <span>i</span>
+        <span>e</span>&nbsp;&nbsp;
+        <span>S</span>
+        <span>h</span>
+        <span>o</span>
+        <span>p</span>
+      </div>
+    </h2>
+    <main>
+      <section class="hero">
+        <div class="hero-image">
+          <img src="images/bethany.jpg" />
+        </div>
+        <div class="hero-content"></div>
+      </section>
+    </main>
+    <strong>
+      <br />
+      <h1>Nuestra historia</h1>
+      <br />
+    </strong>
+    <p>
+      Bethany lleva muchos años horneando las tartas más deliciosas en su
+      casa.<br />
+      En 2013, abrimos nuestra primera tienda en Bruselas (Bélgica), en una
+      pequeña y acogedora calle cerca del Gran Mercado.<br />
+      Personas de todo el mundo se enamoraron de los pasteles suaves, las tartas
+      de queso celestiales, las tartas de manzana picantes... La tienda se
+      convirtió en un éxito en poco tiempo.
+    </p>
+    <br />
+    <br />
+    <p>
+      En 2015, se vendieron no menos de 100 tartas al día y Bethany's Pie
+      Shop<br />
+      se mudó a un edificio más grande. Después de recibir muchas
+      solicitudes,<br />
+      quedó claro que nuestro siguiente paso era hacer posible pedir tartas
+      desde la comodidad de su hogar y desde cualquier parte del mundo. Ahora<br />
+      está viendo el resultado de esto: ¡nuestra propia tienda web, que hace
+      posible pedir las deliciosas tartas de Bethany cuando lo desee!<br />
+    </p>
+    <br />
+    <p>Bethany es famosa por utilizar solo los mejores ingredientes</p>
+    <aside>
+      <div class="container">
+        <div>
+          <img src="images/bethanylogo.png" width="850" height="849" />
+        </div>
+        <br />
+        <div class="greetings">
+          <span>B</span>
+          <span>r</span>
+          <span>o</span>
+          <span>w</span>
+          <span>s</span>
+          <span>e</span>&nbsp;&nbsp;
+          <span>o</span>
+          <span>u</span>
+          <span>r</span>&nbsp;&nbsp;
+          <span>P</span>
+          <span>i</span>
+          <span>e</span>
+          <span>s</span>
+        </div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <div><br /></div>
+        <a href="2plata.html"><button>All Pies</button></a>
+        <a href="3plata.html"><button>Cheese Pies</button></a>
+        <a href="index.html"><button>Fruit Pies</button></a>
+        <a href="2plata.html"><button>Promotions</button></a>
+      </div>
+    </aside>
+    <br />
+    <br />
+    <br />
+
+    <footer id="mainfooter" style="padding-left: 110px">
+      <br />
+      <h4>Nuestra dirección</h4>
+      <address>Av La Fontana S/N- La Molina</address>
+      <small
+        >Contact is via
+        <a href="p-g-contacto-main/fulanito.html" target="_blank"
+          >email</a
+        ></small
+      >
+      <small>@2024 FIA-All rights reserved</small>
+      <div><br /></div>
+    </footer>
+  </body>
+</html>

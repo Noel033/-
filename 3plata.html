@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to Bethany' Pie Shop 2!</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.25" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/pie-shop.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/cake.svg" alt="Pie Logo" class="logo" id="logo" />
+      <audio id="audio" loop>
+        <source src="audio/terreineitor.mp3" type="audio/mp3" />
+        <span style="display: none"
+          >Tu navegador no soporta el elemento audio.</span
+        >
+      </audio>
+
+      <script>
+        const logo = document.getElementById("logo");
+        const audio = document.getElementById("audio");
+
+        logo.addEventListener("click", () => {
+          if (audio.paused) {
+            audio.play();
+          } else {
+            audio.pause();
+          }
+        });
+      </script>
+      <nav>
+        <ul>
+          <li style="margin-right: 200px">
+            <a href="index.html" style="font-size: 70px">Home</a>
+          </li>
+          <li style="margin-right: 200px">
+            <a href="2plata.html" style="font-size: 70px">All Pies</a>
+          </li>
+          <li>
+            <a href="3plata.html" style="font-size: 70px">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h2 id="titulo">
+      <div class="greetings">
+        <span>E</span>
+        <span>m</span>
+        <span>p</span>
+        <span>e</span>
+        <span>z</span>
+        <span>o</span>&nbsp;&nbsp;
+        <span>a</span>
+      </div>
+      <div class="greetings">
+        <span>L</span>
+        <span>l</span>
+        <span>o</span>
+        <span>v</span>
+        <span>e</span>
+        <span>r</span>
+      </div>
+    </h2>
+    <main class="hero">
+      <div class="responsive-iframe">
+        <iframe
+          src="https://www.youtube.com/embed/Z_7mF5uWqIs"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+
+    <div class="responsive-iframe">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.818369356895!2d-3.7038!3d40.4168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1624553704556!5m2!1ses!2ses"
+      ></iframe>
+    </div>
+    <div class="container">
+      <div>
+        <img src="images/bethanylogo.png" width="850" height="849" />
+      </div>
+      <br />
+      <div class="greetings">
+        <span>B</span>
+        <span>r</span>
+        <span>o</span>
+        <span>w</span>
+        <span>s</span>
+        <span>e</span>&nbsp;&nbsp;
+        <span>o</span>
+        <span>u</span>
+        <span>r</span>&nbsp;&nbsp;
+        <span>P</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+      </div>
+      <div><br /></div>
+      <div><br /></div>
+      <div><br /></div>
+      <div><br /></div>
+      <div><br /></div>
+      <div><br /></div>
+      <a href="2plata.html"><button>All Pies</button></a>
+      <a href="3plata.html"><button>Cheese Pies</button></a>
+      <a href="index.html"><button>Fruit Pies</button></a>
+      <a href="2plata.html"><button>Promotions</button></a>
+    </div>
+
+    <div><br /></div>
+    <div><br /></div>
+    <div><br /></div>
+
+    <div>
+      <footer id="mainfooter" style="padding-left: 110px">
+        <br />
+        <h4>Nuestra dirección</h4>
+        <address>Av La Fontana S/N- La Molina</address>
+        <small
+          >Contact is via
+          <a href="p-g-contacto-main/fulanito.html" target="_blank"
+            >email</a
+          ></small
+        >
+        <small>@2024 FIA-All rights reserved</small>
+        <div><br /></div>
+      </footer>
+    </div>
+  </body>
+</html>
